@@ -1,0 +1,71 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+html, body {
+  height: 100%;
+  color: white;
+  background-color: #20262E;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a, button {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* 
+  end reset css by 
+  Josh Jomeau
+  [ https://www.joshwcomeau.com/css/custom-css-reset/ ]
+*/
+
+/* navbar */
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-around;
+  background: linear-gradient(to bottom right,
+  rgba(84, 98, 217, 1),
+  rgba(84, 98, 198, .6));
+}
+
+nav .navlist {
+  position: absolute;
+  right: -3000px;
+}
+/* end navbar */
