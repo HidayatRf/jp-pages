@@ -1,50 +1,100 @@
-*, *::before, *::after {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-html, body {
-  height: 100%;
-  color: white;
-  background-color: #20262E;
+html,
+body {
+	color: white;
+	scroll-behavior: smooth;
+	background-color: rgba(21, 30, 40, 1);
+	font-family: 'Poppins';
 }
 
 body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
 }
 
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
 }
 
-a, button {
-  text-decoration: none;
-  color: inherit;
+a,
+button {
+	text-decoration: none;
+	color: inherit;
+	font-size: 1rem;
+	display: inline-block;
 }
 
 button {
-  outline: none;
-  border: none;
-  background: transparent;
+	outline: none;
+	border: none;
+	font-size: 1rem;
+	background: transparent;
 }
 
-input, button, textarea, select {
-  font: inherit;
+input,
+button,
+textarea,
+select {
+	font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
 }
 
-#root, #__next {
-  isolation: isolate;
+:root {
+	--primary: rgba(56, 129, 219, 1);
+	--secondary: rgba(0, 115, 255, 1);
+	--dark: rgba(33, 45, 60, 1);
+	--info: rgba(53, 72, 94, 1);
+	--jp: rgba(255, 30, 30, 1);
+	--w-shadow: rgba(247, 250, 255, 0.1);
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}
+
+@font-face {
+	font-family: "osaka-re";
+	src: url('../font/osaka-re.ttf') format("truetype");
+}
+
+section {
+	padding-top: 3.5em;
+}
+
+section p {
+	font-size: .8rem;
+}
+
+section span {
+	color: var(--jp);
 }
 
 /* 
@@ -53,19 +103,257 @@ p, h1, h2, h3, h4, h5, h6 {
   [ https://www.joshwcomeau.com/css/custom-css-reset/ ]
 */
 
+/* container */
+.container {
+	display: grid;
+	row-gap: 10rem;
+}
+
+/* end container */
+
 /* navbar */
 nav {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  justify-content: space-around;
-  background: linear-gradient(to bottom right,
-  rgba(84, 98, 217, 1),
-  rgba(84, 98, 198, .6));
+	display: flex;
+	position: fixed;
+	width: 100%;
+	padding: .6rem 1rem;
+	align-items: center;
+	justify-content: space-between;
+	background: linear-gradient(to bottom right,
+			rgba(84, 98, 158, 1),
+			rgba(54, 78, 128, 1));
+	top: 0;
 }
 
 nav .navlist {
-  position: absolute;
-  right: -3000px;
+	position: absolute;
+	right: -100%;
+	width: 65%;
+	height: 93vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: rgba(20, 35, 50, .8);
+	padding: 1rem 0 0;
+	box-shadow: 0 0 30px rgba(42, 180, 255, .15);
+}
+
+nav .navlist img {
+	width: 65%;
+	align-self: center;
+}
+
+nav .navlist img:last-child {
+	justify-self: end;
+}
+
+nav .navlist .nav-items {
+	display: grid;
+	row-gap: 2rem;
+	padding: 1rem 0;
+	justify-items: center;
 }
 /* end navbar */
+
+/* header */
+header {
+	height: 350px;
+	display: flex;
+	align-items: end;
+	background-image: url("../img/HeaderJp.jpg");
+}
+
+header .h-text {
+	padding: 0;
+	width: 100%;
+	display: grid;
+	row-gap: .5rem;
+	justify-items: start;
+	padding: .5rem;
+	background-color: rgba(57, 57, 57, 0.42);
+}
+
+header .h-text h2 {
+	font-family: osaka-re;
+	letter-spacing: .1em;
+}
+
+header .h-text span {
+	color: var(--jp);
+}
+
+header .h-text p {
+	font-size: .7rem;
+	max-width: 20rem;
+}
+
+header .h-text a {
+	padding: .2rem 1rem;
+	border-radius: .3rem;
+	font-weight: bold;
+	font-size: .9rem;
+	border: 2px solid var(--primary);
+}
+
+header .h-text a:hover {
+	background-color: var(--secondary);
+	opacity: .7;
+}
+
+/* end header */
+
+/* about jp */
+.about-jp .wrapper {
+	display: grid;
+	row-gap: 2rem;
+	padding: 1rem 1.5rem;
+	background-color: rgba(15, 15, 15, 1);
+}
+
+.about-jp h2 span,
+.about-jp h3 span{
+	color: var(--jp);
+}
+
+.about-jp .contents {
+	display: grid;
+	row-gap: 1.5rem;
+}
+
+.about-jp .contents .content {
+	border-radius: .5rem;
+	box-shadow: 2px 2px 29px var(--w-shadow);
+}
+
+.about-jp .contents .content .info {
+	display: grid;
+	row-gap: .5rem;
+	padding: .6rem;
+	background-color: rgba(41, 54, 71, 1);
+}
+/* end about jp */
+
+/* culture jp */
+.jp-culture .wrapper {
+	display: grid;
+	row-gap: 2rem;
+	padding: 1rem;
+	background: linear-gradient(to bottom right,
+		rgba(27, 41, 56, 1),
+		rgba(37, 51, 86, 1)
+	);
+}
+
+.jp-culture .contents {
+	display: grid;
+	row-gap: 2rem;
+}
+
+.jp-culture .contents .content {
+	background: rgba(37, 42, 60, 1);
+	border-radius: .5rem;
+	padding: .5rem;
+	box-shadow: 1px 1px 10px var(--w-shadow);
+}
+
+.jp-culture .contents .content:nth-child(even) {
+	box-shadow: -1px 1px 10px var(--w-shadow);
+}
+
+.jp-culture img {
+	margin-bottom: 1rem;
+}
+
+.jp-culture .contents .info {
+	display: grid;
+	row-gap: .7rem;
+}
+
+.jp-culture button {
+	margin-top: 1rem;
+	border-radius: .5rem;
+	padding: .3rem 1rem;
+	background-color: rgba(4, 196, 71, 1);
+}
+/* end culture jp */
+
+/* jp city */
+.jp-city {
+	padding: .5rem;
+}
+
+.jp-city img {
+	border-radius: .5rem;
+}
+
+.jp-city .wrapper > h3 {
+	margin-bottom: 20px;
+}
+
+.jp-city .info {
+	padding: .5rem;
+	display: grid;
+	row-gap: 10px;
+}
+
+.jp-city button {
+	border-radius: .5rem;
+	padding: .5rem 1rem;
+	font-weight: bold;
+	background-color: var(--secondary);
+}
+
+.jp-city button:hover {
+	box-shadow: 0 0 10px rgba(87, 156, 255, 0.31);
+	background-color: rgba(46, 87, 175, 1);
+}
+
+/* end jp city */
+
+/* culinary jp */
+.jp-culinary {
+	padding: .5rem;
+}
+
+.jp-culinary img {
+	border-radius: .4rem;
+}
+
+.jp-culinary .contents {
+	display: grid;
+	row-gap: 1.3rem;
+}
+
+.jp-culinary .info {
+	display: grid;
+	row-gap: .5rem;
+	padding: .5rem;
+}
+/* end culinary jp */
+
+
+/* footer */
+footer {
+	display: grid;
+	row-gap: .6rem;
+	padding: 1rem;
+	text-align: center;
+	background-color: rgba(26, 38, 50, 1);
+}
+
+footer p {
+	font-size: .7rem;
+}
+
+footer .media {
+	display: flex;
+	font-size: .6rem;
+	justify-content: space-evenly;
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+footer .media a {
+	margin: 0 .5rem;
+}
+/* end footer */

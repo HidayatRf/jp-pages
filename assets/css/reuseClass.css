@@ -1,0 +1,27 @@
+nav .navlist.opened {
+  right: 0;
+}
+
+.transition-3 {
+  transition: .3s;
+}
+
+.upperC {
+  text-transform: uppercase;
+}
+
+.capital {
+  text-transform: capitalize;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.t-center {
+	text-align: center;
+}
+
+.overflow-hide {
+	overflow: hidden;
+}

@@ -2,50 +2,338 @@
 <html lang="en">
 
 <head>
-  <title>jpPage</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JPage</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- my css -->
-  <link rel="stylesheet" href="assets/css/reuseClass.css">
-  <link rel="stylesheet" href="assets/css/screen.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+	<!-- my css -->
+	<link rel="stylesheet" href="assets/css/reuseClass.css">
+	<link rel="stylesheet" href="assets/css/screen.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- fonts google -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+	<!-- fonts google -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+	
+	<!-- font awesome icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
 </head>
 
 <body id="home">
-  <div class="container">
-    <nav>
-      <h2 class="upperC">
-        jpPage
-      </h2>
-      <ul class="navlist">
-        <li>
-          <a href="#home" class="link transition-3 capital">home</a>
-        </li>
-        <li>
-          <a href="#about" class="link transition-3 capital">about japan</a>
-        </li>
-        <li>
-          <a href="#city" class="link transition-3 capital">japanese city</a>
-        </li>
-        <li>
-          <a href="#culture" class="link transition-3 capital">japanese culture</a>
-        </li>
-        <li>
-          <a href="#culinary" class="link transition-3 capital">culinary japan</a>
-        </li>
-      </ul>
-      <button type="submit" class="opnNav">
-        <h2>(0)</h2>
-      </button>
-    </nav>
-  </div>
+	<div class="container">
+		<!-- navbar -->
+		<nav class="transition-3">
+			<h2 class="upperC">
+				jpage
+			</h2>
+			<div class="navlist transition-3">
+				<img src="./assets/img/wel-text.png" alt="konnichiwa img">
+				<div class="nav-items">
+					<a href="#home" class="link transition-3 capital">home</a>
+					<a href="#about" class="link transition-3 capital">about japan</a>
+					<a href="#city" class="link transition-3 capital">japanese city</a>
+					<a href="#culture" class="link transition-3 capital">japanese culture</a>
+					<a href="#culinary" class="link transition-3 capital">culinary japan</a>
+					<a href="#culinary" class="link transition-3 capital">transportasion japan</a>
+				</div>
+				<img src="./assets/img/tokyo-tower-vec.png" alt="tokyo tower img">
+			</div>
+			<button type="submit" class="transition-3 opnNav">
+				<i class="fa-sharp fa-solid fa-bars"></i>
+			</button>
+		</nav>
+		<!-- end navbar -->
+
+		<!-- header -->
+		<header>
+			<div class="h-text">
+				<h2 class="upperC">
+					ja<span>pane</span>se
+				</h2>
+				<p class="capital">
+					Lorem ipsum dolor sit amet.
+					Lorem ipsum dolor sit amet, c
+					onsectetur adipisicing elit. Earum d
+					olorem fugit, et accusantium natus cons
+					equuntur molestias corrupti, tenetur. Adipisci, ad!
+				</p>
+				<a href="#about" class="link transition-3 upperC pointer">
+					explore !
+				</a>
+			</div>
+		</header>
+		<!-- end header -->
+		
+		<!-- about jp -->
+		<section class="about-jp" id="about">
+			<div class="wrapper">
+				<h2 class="upperC t-center">
+					about <span>japan</span>
+				</h2>
+				<div class="contents">
+					<div class="content overflow-hide">
+						<img src="./assets/img/about-jp/map.jpeg" alt="japanese map">
+						<div class="info">
+							<h3 class="capital"><span>japanese</span> country</h3>
+							<p class="capital">
+								Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Nihil totam delectus quo al
+								iquam, pariatur, inventore quidem odit corporis prov
+								ident itaque amet illo ratione, ab consectetur.
+							</p>
+						</div>
+					</div>
+					<div class="content overflow-hide">
+						<img src="./assets/img/about-jp/katakana.jpeg" alt="katakana alphabet">
+						<div class="info">
+							<h3 class="capital">katakana character</h3>
+							<p class="capital">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. U
+								llam libero facere adipisci. Laborum, voluptates ducimus ipsa mo
+								di sint ipsam officiis magni amet iure nemo odit earum ratione minus,
+								veniam sit!
+							</p>
+						</div>
+					</div>
+					<div class="content overflow-hide">
+						<img src="./assets/img/about-jp/hiragana.jpeg" alt="hiragana character">
+						<div class="info">
+							<h3 class="capital">hiragana character</h3>
+							<p class="capital">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit
+								. Nesciunt maxime amet modi, provident, odio aut.
+								Incidunt numquam nihil facilis modi.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- end about jp -->
+		
+		<!-- japanese culture -->
+		<section class="jp-culture" id="culture">
+			<div class="wrapper">
+				<h2 class="upperC t-center">
+					<span>japanese</span>
+					culture	
+				</h2>
+				<div class="contents">
+					<div class="content">
+						<img src="assets/img/culture-jp/hatsuMode.jpeg" alt="">
+						<div class="info">
+							<h3 class="capital">
+								<span>
+									hatsu
+								</span>
+								mode
+							</h3>
+							<p class="capital">
+								Lorem ipsum dolor sit amet, consectetur adipisicing
+								elit. Asperiores omnis tempore, quos nobis repudiandae
+								voluptatum doloremque temporibus minus, ea aut facilis
+								molestiae. Vero accusamus suscipit, optio at, ipsa 
+								veritatis voluptas.
+							</p>
+						</div>
+						<button type="submit" class="readMore capital transition-3">
+							read more
+						</button>
+					</div>
+					<div class="content">
+						<img src="assets/img/culture-jp/kimono.jpeg" alt="">
+						<div class="info">
+							<h3 class="capital">
+								<span>japanese</span>
+								kimono
+							</h3>
+							<p class="capital">
+								Lorem ipsum dolor sit amet, consectetur adipisicing 
+								elit. Vero accusamus dignissimos tenetur,
+								harum cumque labore sunt temporibus eaque
+								repudiandae. Voluptas recusandae ipsa odit 
+								molestiae nesciunt.
+							</p>
+						</div>
+						<button type="submit" class="readMore capital transition-3">
+							read more
+						</button>
+					</div>
+					<div class="content">
+						<img src="assets/img/culture-jp/obonMatsuri.jpeg" alt="">
+						<div class="info">
+							<h3 class="capital">obon matsuri</h3>
+							<p class="capital">
+								Lorem ipsum dolor sit amet, consectetur 
+								adipisicing elit. Natus nam modi, praesentium 
+								sit id sequi, odit. At amet, iste earum!
+							</p>
+						</div>
+						<button type="submit" class="readMore capital transition-3">
+							read more
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end japanese culture -->
+		
+		<!-- jp city -->
+		<section class="jp-city" id="city">
+			<div class="wrapper">
+				<h3 class="upperC t-center">
+					<span>japanese</span>
+					city
+				</h3>
+				<div class="contents">
+					<div class="tokyo">
+						<img src="./assets/img/city-jp/tokyo.jpeg" alt="">
+						<div class="info">
+							<h3 class="capital">
+								tokyo
+							</h3>
+							<p class="capital">
+								Lorem ipsum dolor sit amet, consectetur adipisicing
+								elit. Maxime, magnam dolor eaque. Aliquam unde 
+								repudiandae tempora atque, labore quos debitis!
+							</p>
+							<p class="capital">
+								Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Eos, doloremque.
+							</p>
+							<button class="upperC transition-3">
+								show more city!
+							</button>
+						</div>
+					</div>
+				</div>
+				</div>
+		</section>
+		<!-- end jp city -->
+		
+		<!-- jp culinary -->
+		<section class="jp-culinary" id="culinary">
+			<div class="wrapper">
+				<div class="contents">
+					<div class="content">
+						<img src="./assets/img/culinary-jp/suhsi.jpeg" alt="sushi">
+						<div class="info">
+							<h3 class="capital">
+								culinary
+								<span>japan</span>
+							</h3>
+							<p class="capital">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. I
+								d ex ut suscipit iusto, atque eaque!
+							</p>
+							<p class="capital">
+								Lorem ipsum dolor sit amet, consectetur 
+								adipisicing elit. Tempora magnam nulla commodi c
+								onsequuntur ad recusandae, non quam accusantium, 
+								labore nemo.
+							</p>
+							<p class="upperC">
+								lihat lebih banyak ↓
+							</p>
+						</div>
+					</div>
+					<div class="content">
+						<img src="./assets/img/culinary-jp/matcha.jpg" alt="">
+						<div class="info">
+							<h3 class="capital">
+								<span>japanese</span>
+								mathca
+							</h3>
+							<p class="capital">
+								Lorem ipsum dolor sit amet, consectetur adipisicing
+								elit. Hic quibusdam excepturi maxime voluptatibus
+								omnis quos necessitatibus adipisci ipsum earum repellendus.
+							</p>
+							<p class="capital">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Quis qui eum ipsa beatae at facere!
+							</p>
+						</div>
+					</div>
+					<div class="content">
+						<img src="./assets/img/culinary-jp/ramen.jpeg" alt="">
+						<div class="info">
+							<h3 class="capital">
+								<span>japanese</span>
+								ramen
+							</h3>
+							<p class="capital">
+								Lorem ipsum dolor sit amet, consectetur adipisicing 
+								elit. Accusamus quod error dicta, fugit velit ipsam 
+								animi ea maxime perspiciatis mollitia amet maiores 
+								odio et quaerat.
+							</p>
+						</div>
+					</div>
+					<div class="content">
+						<img src="./assets/img/culinary-jp/udon.jpeg" alt="">
+						<div class="info">
+							<h3 class="capital">
+								<span>
+									japanese
+								</span>
+								udon
+								men
+							</h3>
+							<p class="capital">
+								Lorem ipsum dolor sit amet, consectetur adipisicing 
+								elit. Explicabo inventore maiores expedita voluptas 
+								pariatur harum, ducimus eveniet nulla beatae
+								assumenda, ratione odio facilis minus possimus nobis l
+								audantium unde. Tenetur, ipsam.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end jp culinary -->
+		
+		<footer>
+			<p class="upperC heading-footer">
+				about this landing page
+			</p>
+			<p class="capital">
+				Lorem ipsum dolor sit amet, consectetur adipisicing 
+				elit. Eaque quibusdam voluptate blanditiis! Magnam 
+				dignissimos, doloremque repellendus cum laudantium, 
+				corrupti nihil.
+			</p>
+			<div class="info">
+				<h4 class="upperC">
+					create by 
+					<a href="HidayatRf.github.io" class="link">reza fairuz h</a>
+					| copyright &copy; 2022
+				</h4>
+			</div>
+			<div class="media">
+				<a href="#" class="link">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+				<a href="#" class="link">
+					<i class="fa-brands fa-twitter"></i>
+				</a>
+				<a href="#" class="link">
+					<i class="fa-brands fa-github"></i>
+				</a>
+				<a href="#" class="link">
+					<i class="fa-brands fa-whatsapp"></i>
+				</a>
+			</div>
+		</footer>
+		
+	</div>
+	
+	
+	<script src="./main.js"></script>
 </body>
 
 </html>
