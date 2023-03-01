@@ -25,6 +25,13 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+img {
+	display: block;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
 img,
 picture,
 video,
@@ -120,9 +127,10 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	background: linear-gradient(to bottom right,
-			rgba(84, 98, 158, 1),
-			rgba(54, 78, 128, 1));
+			rgba(84, 98, 158, .6),
+			rgba(54, 78, 128, .8));
 	top: 0;
+	left: 0;
 }
 
 nav .navlist {
@@ -153,14 +161,15 @@ nav .navlist .nav-items {
 	padding: 1rem 0;
 	justify-items: center;
 }
+
 /* end navbar */
 
 /* header */
 header {
-	height: 350px;
+	height: 55vh;
 	display: flex;
 	align-items: end;
-	background-image: url("../img/HeaderJp.jpg");
+	background-image: url(../img/HeaderJp.jpg);
 }
 
 header .h-text {
@@ -211,7 +220,7 @@ header .h-text a:hover {
 }
 
 .about-jp h2 span,
-.about-jp h3 span{
+.about-jp h3 span {
 	color: var(--jp);
 }
 
@@ -229,19 +238,22 @@ header .h-text a:hover {
 	display: grid;
 	row-gap: .5rem;
 	padding: .6rem;
+	align-items: center;
 	background-color: rgba(41, 54, 71, 1);
 }
+
 /* end about jp */
 
 /* culture jp */
 .jp-culture .wrapper {
 	display: grid;
 	row-gap: 2rem;
-	padding: 1rem;
+	padding: 1.5em 1em 3em;
+	border-radius: 3.5em 0 3.5em 0;
 	background: linear-gradient(to bottom right,
-		rgba(27, 41, 56, 1),
-		rgba(37, 51, 86, 1)
-	);
+			rgba(27, 41, 56, 1),
+			rgba(37, 51, 86, 1));
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 .jp-culture .contents {
@@ -267,14 +279,16 @@ header .h-text a:hover {
 .jp-culture .contents .info {
 	display: grid;
 	row-gap: .7rem;
+	justify-items: start;
+	align-items: center;
 }
 
-.jp-culture button {
-	margin-top: 1rem;
+.jp-culture .info button {
 	border-radius: .5rem;
-	padding: .3rem 1rem;
+	padding: .3em 1em;
 	background-color: rgba(4, 196, 71, 1);
 }
+
 /* end culture jp */
 
 /* jp city */
@@ -286,19 +300,21 @@ header .h-text a:hover {
 	border-radius: .5rem;
 }
 
-.jp-city .wrapper > h3 {
+.jp-city .wrapper>h3 {
 	margin-bottom: 20px;
 }
 
 .jp-city .info {
 	padding: .5rem;
 	display: grid;
+	justify-items: start;
+	align-items: center;
 	row-gap: 10px;
 }
 
 .jp-city button {
-	border-radius: .5rem;
-	padding: .5rem 1rem;
+	border-radius: .5em;
+	padding: .5em 1em;
 	font-weight: bold;
 	background-color: var(--secondary);
 }
@@ -329,6 +345,7 @@ header .h-text a:hover {
 	row-gap: .5rem;
 	padding: .5rem;
 }
+
 /* end culinary jp */
 
 
@@ -356,4 +373,5 @@ footer .media {
 footer .media a {
 	margin: 0 .5rem;
 }
+
 /* end footer */

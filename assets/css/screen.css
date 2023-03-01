@@ -1,0 +1,148 @@
+@media (min-width: 640px) {
+	html {
+		font-size: 26px;
+	}
+
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 32px;
+	}
+
+	section .wrapper {
+		padding: .5rem;
+	}
+
+
+
+}
+
+
+@media (min-width: 1024px) {
+
+	nav div.navlist {
+		right: 0%;
+		position: static;
+	}
+
+	nav button,
+	nav div.navlist img {
+		display: none;
+
+	}
+
+	nav div.navlist div.nav-items a span {
+		display: none;
+	}
+
+	nav div.navlist {
+		height: 100%;
+		width: 70%;
+		padding: 0;
+		background: transparent;
+		box-shadow: 0 0 0 0;
+	}
+
+	nav div.navlist div.nav-items {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+	}
+
+	nav div.navlist div.nav-items a {
+		margin: 0 .4rem;
+		font-size: .9rem;
+	}
+
+	header .h-text {
+		max-width: 45%;
+		display: grid;
+		height: 65%;
+		border-radius: 0 50% 0 0;
+		align-items: center;
+	}
+
+	.about-jp .contents .wrapper {
+		padding: 0;
+	}
+
+	.about-jp .contents .content {
+		display: grid;
+		align-items: stretch;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.about-jp .info {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.jp-culture .contents .content {
+		display: grid;
+		align-items: center;
+		column-gap: .5em;
+		grid-template-columns: 1.1fr 1fr;
+	}
+
+	.jp-culture img {
+		align-self: stretch;
+	}
+
+	.jp-city .tokyo {
+		display: flex;
+		align-items: centet;
+		justify-content: space-around;
+	}
+
+	section.jp-city button {
+		padding: .5em .85rem;
+	}
+
+	section.jp-culinary div.wrapper {
+		display: grid;
+		row-gap: 1.2rem;
+	}
+
+	.jp-culinary .contents {
+		display: grid;
+		column-gap: 1.1rem;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.jp-culinary .contents .content img {
+		height: 350px;
+	}
+}
+
+
+@media (min-width: 1280px) {
+	html {
+		font-size: 33px;
+	}
+
+	button {
+		color: red;
+		font-size: .7rem;
+	}
+
+	header .h-text {
+		height: 65%;
+	}
+
+	section div.wrapper {
+		padding: 3%;
+	}
+}
+
+@media (min-width: 1440px) {
+ 
+ section .wrapper {
+  padding: 7%;
+ } 
+ 
+ .jp-city button {
+  font-size: .7rem;
+ }
+}

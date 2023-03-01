@@ -1,9 +1,6 @@
-nav .navlist.opened {
-  right: 0;
-}
 
 .transition-3 {
-  transition: .3s;
+  transition: .3s ease-in;
 }
 
 .upperC {

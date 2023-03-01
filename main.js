@@ -3,13 +3,23 @@ const navlist = navbar.querySelector('.navlist')
 const opnNav = navbar.querySelector('.opnNav')
 const menuIcon = opnNav.querySelector('i')
 
+let opened = true
+
 opnNav.addEventListener('click', function () {
-	navlist.style.top = `${navbar.clientHeight}px`
-  navlist.classList.toggle('opened')
+	
+	if ( opened ) {
+	  navlist.style.right = 0;
+	  opened = false;
+	}else {
+	 navlist.style.right = -2000 + "px";
+	 opened = true;
+	}
+  
   menuIcon.classList.toggle('fa-xmark')
 })
 
 window.addEventListener('load', () => {
+  navlist.style.top = `${navbar.clientHeight}px`
   document.body.style.paddingTop = navbar.clientHeight + "px"
 })
 
