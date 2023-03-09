@@ -14,8 +14,6 @@
 		padding: .5rem;
 	}
 
-
-
 }
 
 
@@ -55,15 +53,21 @@
 		margin: 0 .4rem;
 		font-size: .9rem;
 	}
-
+ 
+  .container header {
+   height: 85vh;
+   position: relative;
+  }
+  
 	header .h-text {
 		max-width: 45%;
 		display: grid;
-		height: 65%;
+		bottom: 0;
+		position: absolute;
 		border-radius: 0 50% 0 0;
 		align-items: center;
 	}
-
+  
 	.about-jp .contents .wrapper {
 		padding: 0;
 	}
@@ -128,7 +132,7 @@
 	}
 
 	header .h-text {
-		height: 65%;
+		height: 45%;
 	}
 
 	section div.wrapper {
@@ -138,7 +142,7 @@
 
 @media (min-width: 1440px) {
  
- section .wrapper {
+ .container section .wrapper {
   padding: 7%;
  } 
  
